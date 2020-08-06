@@ -1,0 +1,7 @@
+<div *ngIf='isLoadingSubdomain && businessNameCheck'>
+  <router-outlet></router-outlet>
+  <notifier-container></notifier-container>
+</div>
+<div *ngIf='!isLoadingSubdomain && !businessNameCheck'>
+  <app-invalid-domain></app-invalid-domain>
+</div>
